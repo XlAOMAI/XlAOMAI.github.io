@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
         <!-- Document title -->
-        <title>Dashboard</title>
+        <title>UI Elements &ndash; Typography</title>
 
         <meta name="description" content="AppUI - Admin Dashboard Template & UI Framework" />
         <meta name="author" content="rustheme" />
@@ -21,10 +21,6 @@
 
         <!-- Google fonts -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,900%7CRoboto+Slab:300,400%7CRoboto+Mono:400" />
-
-        <!-- Page JS Plugins CSS -->
-        <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css" />
-        <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.min.css" />
 
         <!-- AppUI CSS stylesheets -->
         <link rel="stylesheet" id="css-font-awesome" href="assets/css/font-awesome.css" />
@@ -55,7 +51,7 @@
 
                                 <li class="nav-item nav-drawer-header">Apps</li>
 
-                                <li class="nav-item active">
+                                <li class="nav-item">
                                     <a href="index.html"><i class="ion-ios-speedometer-outline"></i> Dashboard</a>
                                 </li>
 
@@ -65,7 +61,7 @@
 
                                 <li class="nav-item nav-drawer-header">Components</li>
 
-                                <li class="nav-item nav-item-has-subnav">
+                                <li class="nav-item nav-item-has-subnav active open">
                                     <a href="javascript:void(0)"><i class="ion-ios-calculator-outline"></i> UI Elements</a>
                                     <ul class="nav nav-subnav">
 
@@ -113,7 +109,7 @@
                                             <a href="base_ui_tabs.html">Tabs</a>
                                         </li>
 
-                                        <li>
+                                        <li class="active">
                                             <a href="base_ui_typography.html">Typography</a>
                                         </li>
 
@@ -271,7 +267,7 @@
 				</button>
                                 <span class="navbar-page-title">
 					
-					Dashboard
+					UI Elements &ndash; Typography
 				</span>
                             </div>
 
@@ -368,331 +364,330 @@
 
                     <!-- Page Content -->
                     <div class="container-fluid p-y-md">
-                        <!-- Stats -->
                         <div class="row">
-                            <div class="col-sm-6 col-lg-3">
-                                <a class="card" href="javascript:void(0)">
-                                    <div class="card-block clearfix">
-                                        <div class="pull-right">
-                                            <p class="h6 text-muted m-t-0 m-b-xs">Revenue</p>
-                                            <p class="h3 text-blue m-t-sm m-b-0">$120.9k</p>
-                                        </div>
-                                        <div class="pull-left m-r">
-                                            <span class="img-avatar img-avatar-48 bg-blue bg-inverse"><i class="ion-ios-bell fa-1-5x"></i></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- .col-sm-6 -->
-
-                            <div class="col-sm-6 col-lg-3">
-                                <a class="card bg-green bg-inverse" href="javascript:void(0)">
-                                    <div class="card-block clearfix">
-                                        <div class="pull-right">
-                                            <p class="h6 text-muted m-t-0 m-b-xs">Total visitors</p>
-                                            <p class="h3 m-t-sm m-b-0">920 000</p>
-                                        </div>
-                                        <div class="pull-left m-r">
-                                            <span class="img-avatar img-avatar-48 bg-gray-light-o"><i class="ion-ios-people fa-1-5x"></i></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- .col-sm-6 -->
-
-                            <div class="col-sm-6 col-lg-3">
-                                <a class="card bg-blue bg-inverse" href="javascript:void(0)">
-                                    <div class="card-block clearfix">
-                                        <div class="pull-right">
-                                            <p class="h6 text-muted m-t-0 m-b-xs">Revenue</p>
-                                            <p class="h3 m-t-sm m-b-0">$340.5k</p>
-                                        </div>
-                                        <div class="pull-left m-r">
-                                            <span class="img-avatar img-avatar-48 bg-gray-light-o"><i class="ion-ios-speedometer fa-1-5x"></i></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- .col-sm-6 -->
-
-                            <div class="col-sm-6 col-lg-3">
-                                <a class="card bg-purple bg-inverse" href="javascript:void(0)">
-                                    <div class="card-block clearfix">
-                                        <div class="pull-right">
-                                            <p class="h6 text-muted m-t-0 m-b-xs">Messages</p>
-                                            <p class="h3 m-t-sm m-b-0">3 new</p>
-                                        </div>
-                                        <div class="pull-left m-r">
-                                            <span class="img-avatar img-avatar-48 bg-gray-light-o"><i class="ion-ios-email fa-1-5x"></i></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- .col-sm-6 -->
-                        </div>
-                        <!-- .row -->
-                        <!-- End stats -->
-
-                        <div class="row">
-                            <!-- Company overview Chart -->
-                            <div class="col-lg-8">
+                            <div class="col-md-6">
                                 <div class="card">
-                                    <div class="card-header bg-blue bg-inverse">
-                                        <h4>Company overview</h4>
-                                        <ul class="card-actions">
-                                            <li>
-                                                <span class="label bg-green">Stat<span class="hidden-xs">istic</span>s <i class="ion-connection-bars"></i></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-block p-b-0 bg-blue bg-inverse">
-                                        <!-- Chart.js Charts (initialized in js/pages/base_pages_dashboard.js), for more examples please check http://www.chartjs.org/docs/ -->
-                                        <div style="height: 200px;"><canvas class="js-chartjs-lines1"></canvas></div>
+                                    <div class="card-header">
+                                        <h4>Bootstrap Headings</h4>
                                     </div>
                                     <div class="card-block">
-                                        <div class="row">
-                                            <div class="col-xs-6 col-lg-3 b-r">
-                                                <p class="h6 small text-muted">Yearly change</p>
-                                                <p class="h3 m-t-0 m-b-md">+214.22</p>
-                                                <div class="progress progress-mini m-b-sm">
-                                                    <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" style="width: 76%"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6 col-lg-3 b-r visible-lg">
-                                                <p class="h6 small text-muted">Shares trade</p>
-                                                <p class="h3 m-t-0 m-b-md">$28.74M</p>
-                                                <div class="progress progress-mini m-b-sm">
-                                                    <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" style="width: 84%"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6 col-lg-3 b-r visible-lg">
-                                                <p class="h6 small text-muted">Yearly change</p>
-                                                <p class="h3 m-t-0 m-b-md">+74%</p>
-                                                <div class="progress progress-mini m-b-sm">
-                                                    <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6 col-lg-3">
-                                                <p class="h6 small text-muted">Total revenue</p>
-                                                <p class="h3 m-t-0 m-b-md">$74.23M</p>
-                                                <div class="progress progress-mini m-b-sm">
-                                                    <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- .row -->
+                                        <h1>H1. Heading</h1>
+                                        <h2>H2. Heading</h2>
+                                        <h3>H3. Heading</h3>
+                                        <h4>H4. Heading</h4>
+                                        <h5>H5. Heading</h5>
+                                        <h6>H6. Heading</h6>
                                     </div>
                                     <!-- .card-block -->
                                 </div>
                                 <!-- .card -->
                             </div>
-                            <!-- .col-lg-8 -->
-                            <!-- End Company overview Chart -->
+                            <!-- .col-md-6 -->
 
-                            <!-- Weekly transactions Widget -->
-                            <div class="col-lg-4">
+                            <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4>Weekly transactions</h4>
-                                        <ul class="card-actions">
-                                            <li class="dropdown">
-                                                <button type="button" data-toggle="dropdown"><i class="ion-more"></i></button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li class="dropdown-header">Profile</li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">3</span> News</a>
-                                                    </li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">1</span> Messages</a>
-                                                    </li>
-                                                    <li class="divider"></li>
-                                                    <li class="dropdown-header">More</li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)">Edit Profile..</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <!-- .card-actions -->
-                                    </div>
-                                    <!-- .card-header -->
-                                    <div class="card-block p-b-0">
-                                        <div style="height: 268px;"><canvas class="js-chartjs-lines2"></canvas></div>
-                                    </div>
-                                    <div class="card-block text-center">
-                                        <span class="label bg-green m-r-xs">Statistics <i class="ion-connection-bars"></i></span> <small>for the <a href="javascript:void(0)">last year</a></small>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .col-lg-4 -->
-                            <!-- End Weekly transactions Widget -->
-                        </div>
-                        <!-- .row -->
-
-                        <div class="row">
-
-                            <div class="col-lg-4">
-                                <!-- Weekly users Widget -->
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4>Weekly users</h4>
-                                        <ul class="card-actions">
-                                            <li class="dropdown">
-                                                <button type="button" data-toggle="dropdown"><i class="ion-more"></i></button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li class="dropdown-header">Profile</li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">3</span> News</a>
-                                                    </li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">1</span> Messages</a>
-                                                    </li>
-                                                    <li class="divider"></li>
-                                                    <li class="dropdown-header">More</li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)">Edit Profile..</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                        <h4>Emphasis</h4>
                                     </div>
                                     <div class="card-block">
-                                        <div style="height: 238px;"><canvas class="js-chartjs-bars"></canvas></div>
-                                    </div>
-                                    <div class="card-block text-center">
-                                        <span class="label bg-green m-r-xs">Statistics <i class="ion-connection-bars"></i></span> <small>for the <a href="javascript:void(0)">last year</a></small>
-                                    </div>
-                                </div>
-                                <!-- .card -->
-                                <!-- End Weekly users Widget -->
-                            </div>
-                            <!-- .col-lg-4 -->
-
-                            <div class="col-lg-8">
-                                <!-- Transactions history Widget -->
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4>Transactions history</h4>
-                                        <ul class="card-actions">
-                                            <li class="dropdown">
-                                                <button type="button" data-toggle="dropdown"><i class="ion-more"></i></button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li class="dropdown-header">Profile</li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">3</span> News</a>
-                                                    </li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">1</span> Messages</a>
-                                                    </li>
-                                                    <li class="divider"></li>
-                                                    <li class="dropdown-header">More</li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)">Edit Profile..</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-block">
-                                        <div style="height: 238px;"><canvas class="js-chartjs-lines3"></canvas></div>
-                                    </div>
-                                    <div class="card-block text-center">
-                                        <span class="label bg-green m-r-xs">Statistics <i class="ion-connection-bars"></i></span> <small>for the <a href="javascript:void(0)">last year</a></small>
-                                    </div>
-                                </div>
-                                <!-- .card -->
-                                <!-- End Transactions history Widget -->
-                            </div>
-                            <!-- .col-lg-8 -->
-                        </div>
-                        <!-- .row -->
-
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <!-- Yearly summary widget -->
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4>Yearly summary</h4>
-                                        <ul class="card-actions">
-                                            <li class="dropdown">
-                                                <button type="button" data-toggle="dropdown"><i class="ion-more"></i></button>
-                                                <ul class="dropdown-menu dropdown-menu-right">
-                                                    <li class="dropdown-header">Profile</li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">3</span> News</a>
-                                                    </li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">1</span> Messages</a>
-                                                    </li>
-                                                    <li class="divider"></li>
-                                                    <li class="dropdown-header">More</li>
-                                                    <li>
-                                                        <a tabindex="-1" href="javascript:void(0)">Edit Profile..</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <!-- .card-actions -->
-                                    </div>
-                                    <!-- .card-header -->
-                                    <div class="card-block">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <p class="h6 small text-muted">Yearly change</p>
-                                                <p class="h3 m-t-0">+214.22</p>
-                                                <!-- Chart.js Charts (initialized in js/pages/base_pages_dashboard.js), for more examples please check http://www.chartjs.org/docs/ -->
-                                                <div style="height: 120px;"><canvas class="js-chartjs-lines4"></canvas></div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <p class="h6 small text-muted">Shares trade</p>
-                                                <p class="h3 m-t-0">$28.74M</p>
-                                                <!-- Chart.js Charts (initialized in js/pages/base_pages_dashboard.js), for more examples please check http://www.chartjs.org/docs/ -->
-                                                <div style="height: 120px;"><canvas class="js-chartjs-lines5"></canvas></div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <p class="h6 small text-muted">Yearly change</p>
-                                                <p class="h3 m-t-0">+74%</p>
-                                                <!-- Chart.js Charts (initialized in js/pages/base_pages_dashboard.js), for more examples please check http://www.chartjs.org/docs/ -->
-                                                <div style="height: 120px;"><canvas class="js-chartjs-lines6"></canvas></div>
-                                            </div>
-                                        </div>
+                                        <p><small>This line of text is meant to be treated as fine print.</small> Ipsum, hic, iste, nihil dolor enim illum laborum <strong>rendered as bold text</strong> delectus beatae obcaecati voluptatum debitis molestias
+                                            nam? <em>rendered as italicized text</em>.</p>
+                                        <p class="m-b-lg">Malorum gubergren mediocritatem in qui, indoctum torquatos ne per, virtute perfecto tincidunt ea quo. Consequatur expedita sit aspernatur fugit impedit nobis!</p>
+                                        <p class="text-left">Left aligned text.</p>
+                                        <p class="text-center">Center aligned text.</p>
+                                        <p class="text-right">Right aligned text.</p>
                                     </div>
                                     <!-- .card-block -->
                                 </div>
                                 <!-- .card -->
-                                <!-- End Yearly summary widget -->
                             </div>
-                            <!-- .col-lg-8 -->
+                            <!-- .col-md-6 -->
+                        </div>
+                        <!-- .row -->
 
-                            <!-- Server load Widget -->
-                            <div class="col-lg-4">
+                        <div class="row">
+
+                            <div class="col-md-6">
                                 <div class="card">
-                                    <div class="card-header bg-purple bg-inverse">
-                                        <h4>Server load</h4>
-                                        <ul class="card-actions">
-                                            <li>
-                                                <span class="js-flot-live-info"></span>
-                                            </li>
-                                        </ul>
+                                    <div class="card-header">
+                                        <h4>AppUI emphasis classes</h4>
                                     </div>
-                                    <div class="card-block bg-purple p-x-0 p-b-0">
-                                        <!-- Live Chart Container -->
-                                        <div class="js-flot-live" style="height: 207px;"></div>
+                                    <div class="card-block">
+                                        <h1 class="box-heading"></h1>
+                                        <p class="text-green">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-cyan">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                     </div>
+                                    <!-- .card-block -->
                                 </div>
                                 <!-- .card -->
                             </div>
-                            <!-- End Server load Widget // .col-lg-4 -->
+                            <!-- .col-md-6 -->
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Bootstrap emphasis classes</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <h1 class="box-heading"></h1>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!-- .card-block -->
+                                </div>
+                                <!-- .card -->
+                            </div>
+                            <!-- .col-md-6 -->
                         </div>
                         <!-- .row -->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Addresses</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <address>
+					   <strong>Twitter, Inc.</strong><br>
+					   795 Folsom Ave, Suite 600<br>
+					   San Francisco, CA 94107<br>
+					   <abbr title="Phone">P:</abbr> (123) 456-7890
+					</address>
+                                        <address>
+					   <strong>Full Name</strong><br>
+					   <a href="mailto:#">first.last@example.com</a>
+					</address>
+                                        <address>
+					   <strong>Full Name</strong><br>
+					   <a href="mailto:#">first.last@example.com</a>
+					</address>
+                                    </div>
+                                    <!-- .card-block -->
+                                </div>
+                                <!-- .card -->
+                            </div>
+                            <!-- .col-md-6 -->
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Blockquotes</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <blockquote>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        </blockquote>
+
+                                        <blockquote class="pull-right">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                                        </blockquote>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <!-- .card-block -->
+                                </div>
+                                <!-- .card -->
+                            </div>
+                            <!-- .col-md-6 -->
+                        </div>
+                        <!-- .row -->
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Unordered list</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <ul>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Consectetur adipiscing elit</li>
+                                            <li>Integer molestie lorem at massa</li>
+                                            <li>Facilisis in pretium nisl aliquet</li>
+                                            <li>
+                                                Nulla volutpat aliquam velit
+                                                <ul>
+                                                    <li>Phasellus iaculis neque</li>
+                                                    <li>Purus sodales ultricies</li>
+                                                    <li>Vestibulum laoreet porttitor sem</li>
+                                                    <li>Ac tristique libero volutpat at</li>
+                                                </ul>
+                                            </li>
+                                            <li>Faucibus porta lacus fringilla vel</li>
+                                            <li>Aenean sit amet erat nunc</li>
+                                            <li>Eget porttitor lorem</li>
+                                        </ul>
+                                    </div>
+                                    <!-- .card-block -->
+                                </div>
+                                <!-- .card -->
+                            </div>
+                            <!-- .col-md-4 -->
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Ordered list</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <ol>
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Consectetur adipiscing elit</li>
+                                            <li>Integer molestie lorem at massa</li>
+                                            <li>Facilisis in pretium nisl aliquet</li>
+                                            <li>Nulla volutpat aliquam velit</li>
+                                            <li>Phasellus iaculis neque</li>
+                                            <li>Purus sodales ultricies</li>
+                                            <li>Vestibulum laoreet porttitor sem</li>
+                                            <li>Ac tristique libero volutpat at</li>
+                                            <li>Faucibus porta lacus fringilla vel</li>
+                                            <li>Aenean sit amet erat nunc</li>
+                                            <li>Eget porttitor lorem</li>
+                                        </ol>
+                                    </div>
+                                    <!-- .card-block -->
+                                </div>
+                                <!-- .card -->
+                            </div>
+                            <!-- .col-md-4 -->
+
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Unstyled list</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <ul class="list-unstyled">
+                                            <li>Lorem ipsum dolor sit amet</li>
+                                            <li>Consectetur adipiscing elit</li>
+                                            <li>Integer molestie lorem at massa</li>
+                                            <li>Facilisis in pretium nisl aliquet</li>
+                                            <li>
+                                                Nulla volutpat aliquam velit
+                                                <ul>
+                                                    <li>Phasellus iaculis neque</li>
+                                                    <li>Purus sodales ultricies</li>
+                                                    <li>Vestibulum laoreet porttitor sem</li>
+                                                    <li>Ac tristique libero volutpat at</li>
+                                                </ul>
+                                            </li>
+                                            <li>Faucibus porta lacus fringilla vel</li>
+                                            <li>Aenean sit amet erat nunc</li>
+                                            <li>Eget porttitor lorem</li>
+                                        </ul>
+                                    </div>
+                                    <!-- .card-block -->
+                                </div>
+                                <!-- .card -->
+                            </div>
+                            <!-- .col-md-4 -->
+                        </div>
+                        <!-- .row -->
+
+                        <div class="row">
+                        </div>
+                        <!-- .row -->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Description</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <dl>
+                                            <dt>Description lists</dt>
+                                            <dd>A description list is perfect for defining terms.</dd>
+                                            <dt>Euismod</dt>
+                                            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                            <dt>Malesuada porta</dt>
+                                            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                                        </dl>
+                                    </div>
+                                    <!-- .card-block -->
+                                </div>
+                                <!-- .card -->
+                            </div>
+                            <!-- .col-md-6 -->
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Horizontal description</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <dl class="dl-horizontal">
+                                            <dt>Description lists</dt>
+                                            <dd>A description list is perfect for defining terms.</dd>
+                                            <dt>Euismod</dt>
+                                            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                            <dt>Malesuada porta</dt>
+                                            <dd>Etiam porta sem malesuada magna mollis euismod. Quot dicant commune his ea, eos cu facer repudiare consequuntur. Agam brute eirmod ut vel, regione labores.</dd>
+                                        </dl>
+                                    </div>
+                                    <!-- .card-block -->
+                                </div>
+                                <!-- .card -->
+                            </div>
+                            <!-- .col-md-6 -->
+                        </div>
+                        <!-- .row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Code</h4>
+                                    </div>
+                                    <div class="card-block">
+                                        <p>This sample text uses tag <code>&lt;code&gt;</code>, and text below uses tag <code>&lt;pre&gt;</code>.</p>
+                                        <pre class="prettyprint">&lt;script type=&quot;text/javascript&quot;&gt;
+// Say hello world until the user starts questioning
+// the meaningfulness of their existence.
+function helloWorld(world) {
+  for (var i = 42; --i &gt;= 0;) {
+    alert(&#39;Hello &#39; + String(world));
+  }
+}
+&lt;/script&gt;
+&lt;style&gt;
+p { color: pink }
+b { color: blue }
+u { color: &quot;umber&quot; }
+&lt;/style&gt;</pre>
+                                    </div>
+                                    <!-- .card-block -->
+                                </div>
+                                <!-- .card -->
+                            </div>
+                            <!-- .col-md-12 -->
+                        </div>
+                        <!-- .row -->
+
                     </div>
-                    <!-- .container-fluid -->
-                    <!-- End Page Content -->
-
-                </main>
-
+                    <!-- .col-md-6 -->
             </div>
-            <!-- .app-layout-container -->
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+        <!-- End Page Content -->
+
+        </main>
+
+        </div>
+        <!-- .app-layout-container -->
         </div>
         <!-- .app-layout-canvas -->
 
@@ -745,24 +740,6 @@
         <script src="assets/js/core/jquery.placeholder.min.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/app-custom.js"></script>
-
-        <!-- Page Plugins -->
-        <script src="assets/js/plugins/slick/slick.min.js"></script>
-        <script src="assets/js/plugins/chartjs/Chart.min.js"></script>
-        <script src="assets/js/plugins/flot/jquery.flot.min.js"></script>
-        <script src="assets/js/plugins/flot/jquery.flot.pie.min.js"></script>
-        <script src="assets/js/plugins/flot/jquery.flot.stack.min.js"></script>
-        <script src="assets/js/plugins/flot/jquery.flot.resize.min.js"></script>
-
-        <!-- Page JS Code -->
-        <script src="assets/js/pages/index.js"></script>
-        <script>
-            $(function()
-            {
-                // Init page helpers (Slick Slider plugin)
-                App.initHelpers('slick');
-            });
-        </script>
 
     </body>
 
